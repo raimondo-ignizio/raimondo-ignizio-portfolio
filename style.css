@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.navbar-container {
+  position: fixed;
+  width: 100%;
+  top: 0;
+}
+
+.navbar {
+  list-style: none;
+  background-color: #212121;
+}
+
+.navbar-item a {
+  text-decoration: none;
+  color: white;
+}
+
+#start,
+#about-me,
+#skills,
+#contact {
+  margin-bottom: 65px !important;
+}
