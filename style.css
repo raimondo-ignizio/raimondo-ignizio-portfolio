@@ -11,6 +11,8 @@
 }
 
 .navbar {
+  display: flex;
+  justify-content: flex-end;
   list-style: none;
   background-color: #212121;
 }
@@ -25,14 +27,13 @@
   color: lightgray;
 }
 
-#start,
-#about-me,
-#skills {
-  margin-bottom: 65px !important;
+.navbar-item {
+  margin: 0 auto;
 }
 
 #start {
   background-color: #424242;
+  margin-bottom: 15px;
 }
 
 main {
@@ -60,7 +61,7 @@ footer {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  line-height: .5em;
+  line-height: .4em;
   margin-bottom: 0;
 }
 
@@ -85,7 +86,7 @@ footer a:active {
 .intro-section {
   background-color: #424242;
   color: white;
-  height: 200px;
+  padding: 50% 0;
 }
 
 .social-icons {
@@ -101,4 +102,22 @@ footer a:active {
 .social-icons a:hover,
 .social-icons a:active {
   opacity: 60%;
+}
+
+.about-section {
+  background-color: #555555;
+  padding: 50% 0;
+}
+
+.about-section img {
+  border-radius: 200px;
+  height: 30%;
+  width: 30%;
+  margin-bottom: 20px;
+  opacity: 85%;
+}
+
+.skills-grid-item img {
+  height: 65px;
+  width: 65px;
 }
