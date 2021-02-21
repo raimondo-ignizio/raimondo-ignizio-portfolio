@@ -20,9 +20,85 @@
   color: white;
 }
 
+.navbar-item a:hover,
+.navbar-item a:active {
+  color: lightgray;
+}
+
 #start,
 #about-me,
-#skills,
-#contact {
+#skills {
   margin-bottom: 65px !important;
+}
+
+#start {
+  background-color: #424242;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background-color: #424242;
+  color: white;
+}
+
+body {
+  margin: 0 auto;
+  text-align: center;
+}
+
+footer {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  background-color: #212121;
+  color: lightgray;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  line-height: .5em;
+  margin-bottom: 0;
+}
+
+.contact p:first-of-type {
+  margin-top: 5px;
+}
+
+.contact p:last-of-type {
+  margin-bottom: 7px;
+}
+
+footer a {
+  text-decoration: none;
+  color: lightgray;
+}
+
+footer a:hover,
+footer a:active {
+  color: white;
+}
+
+.intro-section {
+  background-color: #424242;
+  color: white;
+  height: 200px;
+}
+
+.social-icons {
+  display: inline;
+}
+
+.social-icons img {
+  height: 35px;
+  width: 35px;
+  padding-right: 7px;
+}
+
+.social-icons a:hover,
+.social-icons a:active {
+  opacity: 60%;
 }
