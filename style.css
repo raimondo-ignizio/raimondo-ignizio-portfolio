@@ -1,3 +1,31 @@
+@font-face {
+  font-family: "RobotoCondensed";
+  src: url("fonts/RobotoCondensed-Regular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "RobotoCondensed";
+  src: url("fonts/RobotoCondensed-Italic.ttf") format("truetype");
+  font-style: italic;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "RobotoCondensed";
+  src: url("fonts/RobotoCondensed-Bold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "RobotoCondensed";
+  src: url("fonts/RobotoCondensed-BoldItalic.ttf") format("truetype");
+  font-style: italic;
+  font-weight: 700;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -9,6 +37,7 @@
   width: 100%;
   top: 0;
   z-index: 1;
+  font-family: "RobotoCondensed", sans-serif;
 }
 
 .navbar {
@@ -43,6 +72,7 @@ main {
   justify-content: space-around;
   background-color: #424242;
   color: white;
+  font-family: "RobotoCondensed", sans-serif;
 }
 
 body {
