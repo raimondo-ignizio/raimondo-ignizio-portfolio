@@ -8,6 +8,7 @@
   position: fixed;
   width: 100%;
   top: 0;
+  z-index: 1;
 }
 
 .navbar {
@@ -61,7 +62,7 @@ footer {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  line-height: .4em;
+  line-height: 1em;
   margin-bottom: 0;
 }
 
@@ -89,6 +90,15 @@ footer a:active {
   padding: 50% 0;
 }
 
+.intro-section img {
+  width: 320px;
+  height: 240px;
+  opacity: 70%;
+  margin-bottom: 35px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px darkgray;
+}
+
 .social-icons {
   display: inline;
 }
@@ -97,6 +107,7 @@ footer a:active {
   height: 35px;
   width: 35px;
   padding-right: 7px;
+  border-radius: 5px;
 }
 
 .social-icons a:hover,
@@ -119,4 +130,10 @@ footer a:active {
 .skills-grid-item img {
   height: 65px;
   width: 65px;
+}
+
+.skills-container {
+  display: flex;
+  flex-direction: column;
+  padding: 80px 0;
 }
