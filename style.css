@@ -167,10 +167,19 @@ footer a:active {
   padding-bottom: 25px;
 }
 
+.skills-grid-item p {
+  padding-bottom: 45px;
+}
+
+
 .skills-container {
   display: flex;
   flex-direction: column;
-  padding: 20% 0;
+  padding: 20% 0 0 0;
+}
+
+.skills-container h1 {
+  padding-bottom: 50px;
 }
 
 @media only screen and (min-width: 480px) and (max-width: 960px) {
@@ -228,7 +237,7 @@ footer a:active {
   }
 
   .intro-section {
-    padding: 20% 0;
+    padding: 8% 0;
   }
 
   .intro-section img {
