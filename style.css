@@ -121,8 +121,8 @@ footer a:active {
 }
 
 .intro-section img {
-  width: 320px;
-  height: 240px;
+  width: 290px;
+  height: 200px;
   opacity: 70%;
   margin-bottom: 35px;
   border-radius: 5px;
@@ -130,7 +130,8 @@ footer a:active {
 }
 
 .social-icons {
-  display: inline;
+  display: flex;
+  flex-wrap: nowrap;
 }
 
 .social-icons img {
@@ -148,6 +149,10 @@ footer a:active {
 .about-section {
   background-color: #555555;
   padding: 50% 0;
+}
+
+.about-section p {
+  padding: 0 20px 0 20px;
 }
 
 .about-section img {
@@ -175,7 +180,7 @@ footer a:active {
 .skills-container {
   display: flex;
   flex-direction: column;
-  padding: 20% 0 0 0;
+  padding: 20% 20px 0 20px;
 }
 
 .skills-container h1 {
