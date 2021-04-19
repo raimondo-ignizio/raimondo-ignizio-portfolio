@@ -1,27 +1,27 @@
 @font-face {
   font-family: "RobotoCondensed";
-  src: url("fonts/RobotoCondensed-Regular.ttf") format("truetype");
+  src: url("/src/fonts/RobotoCondensed-Regular.ttf") format("truetype");
   font-style: normal;
   font-weight: 400;
 }
 
 @font-face {
   font-family: "RobotoCondensed";
-  src: url("fonts/RobotoCondensed-Italic.ttf") format("truetype");
+  src: url("/src/fonts/RobotoCondensed-Italic.ttf") format("truetype");
   font-style: italic;
   font-weight: 400;
 }
 
 @font-face {
   font-family: "RobotoCondensed";
-  src: url("fonts/RobotoCondensed-Bold.ttf") format("truetype");
+  src: url("/src/fonts/RobotoCondensed-Bold.ttf") format("truetype");
   font-style: normal;
   font-weight: 700;
 }
 
 @font-face {
   font-family: "RobotoCondensed";
-  src: url("fonts/RobotoCondensed-BoldItalic.ttf") format("truetype");
+  src: url("/src/fonts/RobotoCondensed-BoldItalic.ttf") format("truetype");
   font-style: italic;
   font-weight: 700;
 }
@@ -169,11 +169,11 @@ footer a:active {
 }
 
 .skills-grid-item h3 {
-  padding-bottom: 25px;
+  margin-bottom: 25px;
 }
 
 .skills-grid-item p {
-  padding-bottom: 45px;
+  margin-bottom: 45px;
 }
 
 
@@ -183,8 +183,17 @@ footer a:active {
   padding: 20% 20px 0 20px;
 }
 
-.skills-container h1 {
-  padding-bottom: 50px;
+.skills-container h1, h2 {
+  margin-bottom: 50px;
+  margin-top: 25px;
+}
+
+.hard-skill {
+  margin-bottom: 80px;
+}
+
+.hard-skill h3 {
+  margin-bottom: 80px;
 }
 
 @media only screen and (min-width: 480px) and (max-width: 960px) {
@@ -272,12 +281,14 @@ footer a:active {
   .skills-grid {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
+    flex-wrap: wrap;
   }
 
   .skills-grid-item {
     width: 25%;
     padding: 30px;
+    margin: auto 10%;
   }
 
   .skills-grid-item h3 {
