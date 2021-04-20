@@ -42,9 +42,10 @@
 
 .navbar {
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
   list-style: none;
   background-color: #212121;
+  font-size: 14px;
 }
 
 .navbar-item a {
@@ -63,7 +64,7 @@
 
 #start {
   background-color: #424242;
-  margin-bottom: 15px;
+  margin-bottom: 22%;
 }
 
 main {
@@ -120,11 +121,15 @@ footer a:active {
   padding: 50% 0;
 }
 
+.intro-section h1 {
+  margin-bottom: 40px;
+}
+
 .intro-section img {
   width: 290px;
   height: 200px;
   opacity: 70%;
-  margin-bottom: 35px;
+  margin-bottom: 50px;
   border-radius: 5px;
   box-shadow: 0 4px 8px darkgray;
 }
@@ -148,7 +153,7 @@ footer a:active {
 
 .about-section {
   background-color: #555555;
-  padding: 50% 0;
+  padding: 50% 0 77% 0;
 }
 
 .about-section p {
@@ -164,8 +169,8 @@ footer a:active {
 }
 
 .skills-grid-item img {
-  height: 65px;
-  width: 65px;
+  height: 80px;
+  width: 80px;
 }
 
 .skills-grid-item h3 {
@@ -196,14 +201,39 @@ footer a:active {
   margin-bottom: 80px;
 }
 
+#my-works {
+  background-color: #FFFDFD;
+  color: black;
+  padding: 30% 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#my-works h1 {
+  margin-bottom: 20%;
+}
+
+.works-container div {
+  margin-bottom: 25px;
+}
+
+.card {
+  box-shadow: 0 4px 8px gray;
+}
+
 @media only screen and (min-width: 480px) and (max-width: 960px) {
 
   * {
     font-size: 22px;
   }
 
+  #start {
+    margin: auto;
+  }
+
   .intro-section {
-    padding: 45% 0;
+    padding: 20% 0;
   }
 
 .intro-section img {
@@ -212,7 +242,7 @@ footer a:active {
 }
 
   .about-section {
-    padding: 45% 0;
+    padding: 25% 0;
   }
 
   .about-section img {
@@ -235,6 +265,10 @@ footer a:active {
     width: 50%;
     padding: 15px;
   }
+
+  #my-works {
+    padding: 15% 0;
+  }
 }
 
 @media only screen and (min-width: 961px) {
@@ -248,6 +282,10 @@ footer a:active {
 
   footer {
     font-size: 22px;
+  }
+
+  #start {
+    margin: auto;
   }
 
   .intro-section {
@@ -278,6 +316,11 @@ footer a:active {
     box-shadow: 0 4px 8px darkgray;
   }
 
+  #skills {
+    padding-top: 5%;
+    padding-bottom: 5%;
+  }
+
   .skills-grid {
     display: flex;
     flex-direction: row;
@@ -286,7 +329,7 @@ footer a:active {
   }
 
   .skills-grid-item {
-    width: 25%;
+    width: 30%;
     padding: 30px;
     margin: auto 10%;
   }
@@ -294,4 +337,27 @@ footer a:active {
   .skills-grid-item h3 {
     font-weight: 700;
   }
+
+  .card {
+    opacity: 80%;
+  }
+
+  .card:hover {
+    opacity: 100%;
+  }
+
+  #my-works {
+    align-items: stretch;
+    padding: 7% 0;
+  }
+
+  #my-works h1 {
+    margin-bottom: 5%;
+  }
+
+  .works-container {
+    display: flex;
+    justify-content: space-around;
+  }
+
 }

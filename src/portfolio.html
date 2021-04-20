@@ -14,8 +14,9 @@
     <nav class="navbar-container">
       <ul class="navbar">
         <li class="navbar-item"><a href="#start"><strong>My portfolio</strong></a></li>
-        <li class="navbar-item"><a href="#about-me">About Me</a></li>
+        <li class="navbar-item"><a href="#about-me">About me</a></li>
         <li class="navbar-item"><a href="#skills">Skills</a></li>
+        <li class="navbar-item"><a href="#my-works">My works</a></li>
         <li class="navbar-item"><a href="#contact">Contact</a></li>
       </ul>
     </nav>
@@ -23,9 +24,7 @@
   <main>
     <div id="start"><br/></div>
     <div class="intro-section">
-      <img src="images/computer-small.jpg" alt="Tastiera Computer"
-           srcset="images/computer-small.jpg 1x,
-                   images/computer-big.jpg 2x"/>
+      <img src="images/computer-big.jpg" alt="Tastiera Computer"/>
       <h1>My portfolio</h1>
       <p>Hi, I'm Raimondo. Welcome to my portfolio.</p>
 
@@ -33,7 +32,7 @@
     <div id="about-me" class="about-section">
       <img src="images/me.jpg" class="about-flex-item about-flex-photo"/>
       <div class="about-flex-item">
-        <h1>About Me</h1>
+        <h1>About me</h1>
         <p>I am a 24 years old man located in Palermo, Italy. After various jobs
            and a course of study which turned out to be the wrong choice for me
            I recently decided to dedicate my self to a world that always
@@ -43,9 +42,47 @@
     </div>
     <div id="skills" class="skills-container">
       <h1>Skills</h1>
-      <h2>Soft Skills</h2>
+      <h2>Hard Skills</h2>
       <div class="skills-grid">
-        <div class="skills-grid-item">
+         <div class="skills-grid-item hard-skill">
+           <img src="images/icon/html5-icon.svg"/>
+           <h3>HTML</h3>
+           <div class="progress">
+             <div class="progress-bar bg-success" style="width: 50%" role="progressbar"
+                  aria-valuenow="5" aria-valuemin="0" aria-valuemax="10">50%</div>
+           </div>
+         </div>
+
+        <div class="skills-grid-item hard-skill">
+         <img src="images/icon/css3-icon.svg"/>
+         <h3>CSS</h3>
+         <div class="progress">
+           <div class="progress-bar bg-success" style="width: 50%" role="progressbar"
+                aria-valuenow="5" aria-valuemin="0" aria-valuemax="10">50%</div>
+         </div>
+        </div>
+
+        <div class="skills-grid-item hard-skill">
+         <img src="images/icon/javascript-icon.svg"/>
+         <h3>JavaScript</h3>
+         <div class="progress">
+           <div class="progress-bar bg-success" style="width: 50%" role="progressbar"
+                aria-valuenow="5" aria-valuemin="0" aria-valuemax="10">50%</div>
+         </div>
+        </div>
+
+        <div class="skills-grid-item hard-skill">
+         <img src="images/icon/vue-icon.svg"/>
+         <h3>Vue.js</h3>
+         <div class="progress">
+           <div class="progress-bar bg-success" style="width: 20%" role="progressbar"
+                aria-valuenow="2" aria-valuemin="0" aria-valuemax="10">20%</div>
+         </div>
+        </div>
+
+        <h2>Soft Skills</h2>
+        <div class="skills-grid">
+          <div class="skills-grid-item">
           <img src="images/icon/perseverance-icon.svg"/>
           <h3>Perseverance</h3>
           <p>When I set myself a goal and I'm convinced about it I work hard
@@ -60,42 +97,40 @@
              both professionally and humanly.</p>
         </div>
       </div>
-      <h2>Hard Skills</h2>
-      <div class="skills-grid">
-         <div class="skills-grid-item hard-skill">
-           <img src="images/icon/html5-icon.svg"/>
-           <h3>HTML</h3>
-           <div class="progress">
-             <div class="progress-bar" style="width: 50%" role="progressbar"
-                  aria-valuenow="5" aria-valuemin="0" aria-valuemax="10"></div>
-           </div>
-         </div>
 
-        <div class="skills-grid-item hard-skill">
-         <img src="images/icon/css3-icon.svg"/>
-         <h3>CSS</h3>
-         <div class="progress">
-           <div class="progress-bar" style="width: 50%" role="progressbar"
-                aria-valuenow="5" aria-valuemin="0" aria-valuemax="10"></div>
-         </div>
+      </div>
+    </div>
+    <div id="my-works">
+      <h1>My works</h1>
+      <div class="works-container">
+        <div class="card" style="width: 18rem;">
+          <img src="images/counter-screenshot.png" class="card-img-top" alt="Counter">
+          <div class="card-body">
+            <h5 class="card-title">Counter</h5>
+            <p class="card-text">A simple counter application for a JavaScript
+                                 project on Start2Impact.</p>
+            <a href="https://little-counter.netlify.app/" target="_blank" class="btn btn-primary">Go there</a>
+          </div>
         </div>
-
-        <div class="skills-grid-item hard-skill">
-         <img src="images/icon/javascript-icon.svg"/>
-         <h3>JavaScript</h3>
-         <div class="progress">
-           <div class="progress-bar" style="width: 50%" role="progressbar"
-                aria-valuenow="5" aria-valuemin="0" aria-valuemax="10"></div>
-         </div>
+        <div class="card" style="width: 18rem;">
+          <img src="images/pollution-screenshot.png" class="card-img-top" alt="Pollution Check">
+          <div class="card-body">
+            <h5 class="card-title">Pollution Check</h5>
+            <p class="card-text">A web application that informs the users about
+                                 the air pollution of the closest city or a city
+                                 of their choice.</p>
+            <a href="https://pollutioncheck.netlify.app/" target="_blank" class="btn btn-primary">Go there</a>
+          </div>
         </div>
-
-        <div class="skills-grid-item hard-skill">
-         <img src="images/icon/vue-icon.svg"/>
-         <h3>Vue.js</h3>
-         <div class="progress">
-           <div class="progress-bar" style="width: 20%" role="progressbar"
-                aria-valuenow="2" aria-valuemin="0" aria-valuemax="10"></div>
-         </div>
+        <div class="card" style="width: 18rem;">
+          <img src="images/tictactoe-screenshot.png" class="card-img-top" alt="Tic Tac Toe">
+          <div class="card-body">
+            <h5 class="card-title">Tic Tac Toe</h5>
+            <p class="card-text">A simple Single Page Application developed with
+                                 Vue.js that lets the user play Tic Tac Toe with
+                                 a friend locally.</p>
+            <a href="https://s2i-tictactoe.netlify.app/" target="_blank" class="btn btn-primary">Go there</a>
+          </div>
         </div>
       </div>
     </div>

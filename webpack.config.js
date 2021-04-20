@@ -41,7 +41,7 @@ module.exports = (env, argv) => {
       plugins: [
         new HtmlWebpackPlugin({
           title: "My Portfolio",
-          template: path.resolve(__dirname, "./src/portfolio.html"),
+          template: path.resolve(__dirname, "./src/portfolio.html")
         }),
       ]
     };
